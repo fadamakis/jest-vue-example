@@ -9,6 +9,7 @@ describe("Auth.vue", () => {
             }
         });
         expect(wrapper.text()).toBe("Hello anonymous")
+        // expect(wrapper.element).toMatchSnapshot()
     })
     test('tests auth state', () => {
         const wrapper = mount(Auth, {

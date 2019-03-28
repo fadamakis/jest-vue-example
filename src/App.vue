@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ProgressBar />
+    <Auth :authorized='true' />
+    <ItemList />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Auth from './components/Auth/Auth.vue'
+import ItemList from './components/ItemList/ItemList.vue'
+import ProgressBar from './components/timers/ProgressBar.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ItemList,
+    Auth,
+    ProgressBar
   }
 }
 </script>

@@ -3,6 +3,7 @@
     <ProgressBar />
     <Auth :authorized='true' />
     <ItemList />
+    <Counter />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Auth from './components/Auth/Auth.vue'
 import ItemList from './components/ItemList/ItemList.vue'
 import ProgressBar from './components/timers/ProgressBar.vue'
+import Counter from './components/events/counter.vue'
 
 export default {
   name: 'app',
   components: {
     ItemList,
     Auth,
-    ProgressBar
+    ProgressBar,
+    Counter
   }
 }
 </script>

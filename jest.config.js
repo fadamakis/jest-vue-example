@@ -22,5 +22,6 @@ module.exports = {
   testMatch: [
     '**/*.spec.(js|jsx|ts|tsx)|**/__tests__/*.(js|jsx|ts|tsx)'
   ],
-  testURL: 'http://localhost/'
+  testURL: 'http://localhost/',
+  setupFiles: ['./test-setup.js']
 }
